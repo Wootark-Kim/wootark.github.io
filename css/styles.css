@@ -3,6 +3,10 @@ body{
 	color:white;
 }
 
+header{
+	color: orange;
+}
+
 header, main, nav, footer, table, div {
 	text-align: center;
 }
@@ -13,19 +17,33 @@ nav a {
 	font-size: 1.8em;
 	text-decoration: none;
 	color: white;
-	
+}
+
+#interests a {
+	display: inline-block;
+	height: 40px;
+	padding: 15px;
+	padding-bottom:4px;
+	font-size: 1.3em;
+	text-decoration: none;
+	color: white;
+	border: 1px solid #3B3B3B;
+	margin: 10px;
+	background-color: #3B3B3B;
 }
 
 nav a:hover {
 	border-bottom: 2px orange solid;
 	color: orange;
-	font-size: 2em;
 	transition: .9s;
 }
 
-header{
+#interests :hover {
+	border-bottom: 1px orange solid;
 	color: orange;
+	transition: .4s;
 }
+
 
 footer {
 	font-size: 0.7em;
@@ -85,3 +103,12 @@ h1 {
   font-variation-settings:
     "wdth" 100;
 }
+
+iframe {
+	border: none;
+	width: 640px;
+	height: 959px;
+	margin: 0;
+}
+
+

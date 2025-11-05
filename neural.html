@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title> Wootark Kim: Portfolio </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+			<style>
+				#neural1, #neural2 {
+				max-width: 1000px;
+				margin: 0 auto 0 auto;	/* margin: top, right, bottom, left (essentially clockwise)*/
+				text-align: left;
+				padding: 0 20px 0 20px; /* padding: top, right, bottom, left 
+									(padding is used to provide margins between the 
+									block and the side of the monitor [if the user's
+									monitor happens to be small enough] )*/
+				text-indent: 30px;
+				}
+
+				#neural1 ul {
+					margin-left: 50px;
+				}
+
+				.image {
+					display: block; /* turn the images into a "block" like elements - allows neater, uniform, modification*/
+					width: 450px;
+					height: auto;
+					margin-left: 0;
+				}
+
+				#comparison {
+					max-width: 1000px;
+					margin: 0 auto 0 auto;	/* margin: top, right, bottom, left (essentially clockwise)*/
+					text-align: left;
+					display: flex;
+					padding: 0 20px 0 20px;
+					font-size: 0.9em;
+				}
+		</style>
+	</head>
+
+    <body>
+        
+		<header> 
+			<h1> Wootark Kim </h1>
+		</header><hr>
+
+		<nav>
+			<a href="index.html"> Home </a>
+			<a href="about.html"> About </a>
+			<a href="contact.html"> Contact </a>
+			<br><hr><br>
+			<div style="font-size: 1.5em; font-weight: bold; color: orange">
+				Topic Interests
+			</div>
+		</nav>
+
+		<nav id="interests">
+			<a href="neural.html" style="color:orange"> Neural Basic </a>
+			<a href="cef.html"> Compute Efficient Frontier </a>	
+			<a href="binarys.html"> Binary </a>	
+			<a href="founder.html"> Java </a>	
+		</nav>
+		<hr><br><br>
+
+		<div style="font-size: 1.5em; font-weight: bold; color: orange">
+			Basics of Neural Network Structure
+		</div>
+
+		<div id="neural1">
+			<p>
+			A neural network structure as 3 elements: </p><br>
+			<ol>
+				<li>input</li>
+				<li>weights</li>
+				<li>bias</li>
+			</ol>
+			<p>
+				The input is the value that comes from other nodes (aka "neurons"). 
+				The weights can be thought up as the "preference" strength of that data value. 
+				The higher the value, the more "important" that value is compared to other inputs.
+				The bias is the node's likelihood to send a signal. 
+			</p>
+		</div>
+
+		<div id="comparison">
+			<figure>
+				<img src="img/cell.jpg" alt="Picture of cell" class="image">
+				<i>Figure 1: an example of basic neuron cell.</i> <br>
+				<i>Drawn by Wootark Kim.</i>
+			</figure>
+
+			<figure>
+				<img src="img/neural.jpg" alt="Picture of neural network" class="image">
+				<i>Figure 2: an example of a basic neural network structure.</i> <br>
+				<i>Drawn by Wootark Kim.</i>
+			</figure>
+		</div>
+
+		<div id="neural2">
+			<p>
+				As you can see, the resemblance its quite strong, hence the name "neural network" as it 
+				took inspiration from the neuron architecture found in the physical world.
+			</p>
+
+			<p>
+				To further expand the analogy, the input is simply the electrical signal that originates 
+				from another neuron. The weight is probably how "strong" and well connected the dendrites 
+				are (since it is receiving signals) in relation to that other neuron it is connected to. The 
+				bias is the node's "resting potential." 
+			</p>
+			<p>
+				A human neuron has a general resting potential of 
+				-70 mV. For a node, the value of the bias determines whether it will likely continue to send
+				the signal it received to another node. Having a low or negative bias value means it may not pass 
+				along the signal it just received to another node and will require a greater strength value of the
+				received data to overcome this hindrance. Thus the lower the bias value, the greater the threshold
+				of the node's activation. The higher the bias value, the lower the threshold of the node's activation.
+			</p>
+		</div>
+
+        <footer>
+			<hr>
+			<img src="img/logo.png" alt="image of csumb logo" width="200"><br>
+			CST336 Internet Programming. 2025; Kim <br>
+		</footer>
+	</body>
+</html>

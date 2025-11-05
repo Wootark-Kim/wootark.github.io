@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title> Wootark Kim: Portfolio </title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+			<style>
+				#cef1, #cef2 {
+				max-width: 1000px;
+				margin: 0 auto 0 auto;	/* margin: top, right, bottom, left (essentially clockwise)*/
+				text-align: left;
+				padding: 0 20px 0 20px; /* padding: top, right, bottom, left 
+									(padding is used to provide margins between the 
+									block and the side of the monitor [if the user's
+									monitor happens to be small enough] )*/
+				text-indent: 30px;
+				}
+
+				.image {
+					display: block; /* turn the images into a "block" like elements - allows neater, uniform, modification*/
+					width: 450px;
+					height: auto;
+					margin-left: 0;
+				}
+
+				#graphs {
+					max-width: 1000px;
+					margin: 0 auto 0 auto;	/* margin: top, right, bottom, left (essentially clockwise)*/
+					text-align: left;
+					display: flex;
+					padding: 0 20px 0 20px;
+					font-size: 0.9em;
+				}
+		</style>
+	</head>
+
+    <body>
+        
+		<header> 
+			<h1> Wootark Kim </h1>
+		</header><hr>
+
+		<nav>
+			<a href="index.html"> Home </a>
+			<a href="about.html"> About </a>
+			<a href="contact.html"> Contact </a>
+			<br><hr><br>
+			<div style="font-size: 1.5em; font-weight: bold; color: orange">
+				Topic Interests
+			</div>
+		</nav>
+
+		<nav id="interests">
+			<a href="neural.html"> Neural Basic </a>
+			<a href="cef.html" style="color:orange"> Compute Efficient Frontier </a>	
+			<a href="binarys.html"> Binary </a>	
+			<a href="founder.html"> Java </a>	
+		</nav>
+		<hr><br><br>
+
+		<div style="font-size: 1.5em; font-weight: bold; color: orange">
+			A New Law?
+		</div>
+
+		<div id="cef1">
+			<p>
+				In the previous topic, I talked about weight and bias. Within an ai's model, this is known as
+				paramters. The more parameter an ai model has, the more "flexibility" it will have in recognizing
+				complex patterns. In other words, bigger ai models have more paramaters that allow it to capture
+				more complex and subtle patterns in data. 
+			</p>
+			<p>
+				The size of an ai's model is important as it has a correlation to it's error rate.
+				To increase the accuracy of an AI's model output, the general solution is to simply 
+				train it with more data. This results in it's errorneous output to be dramatically 
+				reduced, but it will eventually plateau/level out.
+			</p>
+			<p>
+				To increase it's accuracy rate beyond just feeding it more data, we can increase the size of the ai's model
+				by providing it with more parameters. The problem is, while this will increase accuracy vs a smaller ai model, it
+				still runs into the same problem where eventually the accuracy will level out. An additional hinderance is the 
+				problem that a larger ai model will require more computing power. 
+			</p>
+			<p>
+				If we were to graph this relation of error rate vs computing power required, we will see a graph that looks like this:
+			</p>
+
+			<div id="graphs">
+				<figure>
+					<img src="img/graph.jpg" alt="Picture of graph" class="image">
+					<i>Figure 1: error rate vs required computing power.</i> <br>
+					<i>Drawn by Wootark Kim.</i>
+				</figure>
+
+				<figure>
+					<img src="img/logarithmic.jpg" alt="Picture of neural network" class="image">
+					<i>Figure 2: The same graph but in logarithmic scale + more AI models.</i> <br>
+					<i>Drawn by Wootark Kim.</i>
+				</figure>
+			</div>
+
+			<div id="cef2">
+				<p>
+					Figure 2, however, shows the result if were to convert the graph to a logarithmic scale and add more, larger and larger, 
+					AI models. We can see a trend here where a line appears. A curious phenomenon where no AI models can seem to pierce this
+					line. This line is known as a the compute efficient frontier.
+				</p>
+				<p>
+					An interesting question that now arises is: <br>
+					Is this line some form of fundamental law or a happenstance limitation caused by a specific approach?
+				</p>
+			</div>
+		</div>
+
+        <footer>
+			<hr>
+			<img src="img/logo.png" alt="image of csumb logo" width="200"><br>
+			CST336 Internet Programming. 2025; Kim <br>
+		</footer>
+	</body>
+</html>
