@@ -1,7 +1,4 @@
-body{
-	background-color:black;
-	color:white;
-}
+
 
 header{
 	color: orange;
@@ -12,11 +9,28 @@ header, main, nav, footer, table, div {
 }
 
 nav a {
+	display: inline-block;
+	height: 40px;
 	padding: 15px;
 	padding-bottom:4px;
-	font-size: 1.8em;
+	font-size: 1.3em;
 	text-decoration: none;
 	color: white;
+	margin: 10px;
+	background-color: #3B3B3B;
+	border: 1px solid #3B3B3B;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	border-bottom: 2px orange solid;
+	color: orange;
+	transition: .9s;
+}
+
+body{
+	background-color:black;
+	color:white;
 }
 
 #interests a {
@@ -27,15 +41,10 @@ nav a {
 	font-size: 1.3em;
 	text-decoration: none;
 	color: white;
-	border: 1px solid #3B3B3B;
 	margin: 10px;
 	background-color: #3B3B3B;
-}
-
-nav a:hover {
-	border-bottom: 2px orange solid;
-	color: orange;
-	transition: .9s;
+	border: 1px solid #3B3B3B;
+	border-radius: 10px;
 }
 
 #interests :hover {
